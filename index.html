@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <!-- Inline CSS to beautify the page and add a gradient background -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      /* Apply a linear gradient background */
+      background: linear-gradient(to right, #ffb400, #ff0080);
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 80px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 24px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    #text-input {
+      width: 80%;
+      padding: 8px;
+      font-size: 16px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 0 6px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 4px;
+      border: none;
+      color: #fff;
+      background-color: #007bff;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #output {
+      margin-top: 24px;
+      font-size: 18px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Local Storage Example</h1>
+    <input 
+      type="text"
+      id="text-input"
+      placeholder="Enter Text"
+    />
+    <br/>
+    <button onclick="saveText()">Save</button>
+    <button onclick="RetrieveText()">Retrieve</button>
+    <div id="output"></div>
+  </div>
+
+  <script src="Data_Retreiver.js">
+  </script>
+</body>
+</html>
